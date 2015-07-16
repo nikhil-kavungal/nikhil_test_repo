@@ -1,0 +1,22 @@
+<html>
+<head>
+<script type="text/javascript">
+
+function callTimer()
+{
+	bar = document.getElementById('progressBar');
+
+	setInterval(callTimer,20);
+			bar.value +=10;
+}
+
+
+
+</script>
+
+
+<title>Progress Bar</title></head>
+<progress id="progressBar" max="100" value="0"></progress>
+<input type="submit" value="Click" onclick="callTimer();">
+
+</html>
